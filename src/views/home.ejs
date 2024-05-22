@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head.ejs') %>
+
+  <body class="bg-dark-subtle">
+
+    <%- include('./partials/header.ejs') %>
+    <!-- BARRA DE NAVEGACION -->
+    
+    <!-- PRESENTACION CON CAROUSEL -->
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner bg-dark portada">
+        <div class="carousel-item active">
+          <img src="./IMG/banner-bg.jpg" alt="Buenos Aires" class="img-fluid d-block w-100 opacity-50">
+        </div>
+        <div class="carousel-item">
+          <img src="./IMG/banner-dc.webp" alt="Buenos Aires" class="img-fluid d-block w-100 opacity-50">
+        </div>
+        <div class="carousel-item">
+          <img src="./IMG/banner-mv.webp" alt="Buenos Aires" class="img-fluid d-block w-100 opacity-50">
+        </div>
+      </div>
+      <div class="card-img-overlay presentacion">
+        <h1 class="pres-titulo">Películas y series ilimitadas
+          en un solo lugar</h1>
+        <h3 class="pres-text">Disfruta donde quieras.
+          Cancela en cualquier momento.</h3>
+        <a href="# "><button type="button" class="btn-1 btn btn-dark border-2 border-dark regbutton mt-3 ">Registrarse</button></a>
+      </div>
+    </div>
+    
+    <div style="height: 90vh;">
+      <!-- BUSCADOR -->
+      
+      <section class="container text-center mt-3 mb-4">
+        <h2 class="p-3 ">¿Qué deseas ver?</h2>
+        <form class="row">
+          <input class="form-control col m-1" type="text" placeholder="Pobres criaturas. . .">
+          <button type="button" class="btn-1 btn btn-dark border-2 border-dark col-1 m-1"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="M11 8a3 3 0 0 0-3 3m12 9l-3-3"/></g></svg></button>
+        </form>
+      </section>
+      
+      <!-- LAS MAS ACLAMADAS -->
+      <div class="container text-center mb-4">
+        <h2 class="m-3">Las mas aclamadas</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+      
+            <!-- PAGINA 1 CAROUSEL -->
+            <div class="carousel-item active ">
+              <div class="row justify-content-center">
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/avengers.jpg " alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/starwars.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/matrix.webp" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/bladerunner.webp" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- PAGINA 2 CAROUSEL -->
+            <div class="carousel-item ">
+              <div class="row justify-content-center">
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/gladiador.jpg " alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/jurassicpark.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/moonlight.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/django.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- PAGINA 3 CAROUSEL -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/et.jpg " alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/freeguy.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/titanic.webp" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card m-1" style="width: 18rem;">
+                  <a href="#">
+                    <img class="card-img-top p-1" src="./IMG/posters/joker.webp" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev carouselcontrol" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next carouselcontrol" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGINAS" -->
+
+    <div class="container text-center">
+      <h2 class="m-3">Cartelera</h2>
+
+      <div class="row justify-content-center">
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/fantasia.webp " alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/sirenita.webp" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/guardians.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/split.webp" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/platoon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/exorcista.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/johnwick.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/Ghostbusters.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/bucandoanemo.jpg " alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/frightnight.webp" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/metropolis.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/ironman.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/bohemianrhapsody.webp" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/imperiodelsol.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/blackswan.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+          <a href="#">
+            <img class="card-img-top p-1" src="./IMG/posters-cartelera/lordofwar.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ejemplo de texto donde se describe en pocas palabras la pelicula.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center m-3">
+      <button type="button" class="btn-1 btn btn-dark border-2 border-dark m-2">Anterior</button>
+      <button type="button" class="btn-1 btn btn-dark border-2 border-dark m-2">Siguiente</button>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+    <!-- FOOTER -->
+    
+  </body>
+</html>

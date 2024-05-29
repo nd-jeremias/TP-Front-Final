@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
     res.render('login', {
         tittle: 'CAC Login',
-        style: '../styles/loginstyle.css'
+        style: '../styles/style.css'
     });
 });
 

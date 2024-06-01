@@ -8,12 +8,4 @@ router.get('/', (req,res) => {
          });
 })
 
-router.get('/home', (req,res) => {
-  res.render('home', {
-             tittle: 'CAC Home',
-             style: '../styles/style.css'
-         });
-})
-
-
 module.exports = router;
